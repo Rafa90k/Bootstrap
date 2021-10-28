@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  </head>
+  <body>
+    <form class="container">
+        <h2 class="text-justify text-danger">Formulario para sugestão, duvidas ou reclamações</h2>
+        <p class="text-primary">
+          O que você tem a dizer é muito importante para nós.
+        </p>
+        <p class="text-primary">
+          Para que possamos melhor
+           atendê-lo, selecione abaixo o tipo de atendimento desejado e preencha corretamente o
+           formulário adequado à sua solicitação.
+         </p>
+         <div>
+           <label for="selecionar" class="text-primary">Selecione</label>
+            <select id="selecionar" name="selecionar" class="bg-success">
+              <option value="reclamar">Reclamação</option>
+              <option value="elogio">Elogiar</option>
+              <option value="sugerir">Sugestão</option>
+              <option value="outro">Outro motivo</option>
+            </select>
+         </div>
+      <fieldset class="form-goup">
+        <label for="eMail" class="form-group text-primary">Email </label>
+        <input type="text" class="form-control"  placeholder="Digite o seu email">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="numero" class="text-primary">Numero para contato</label>
+        <input type="numero" class="form-control border border-dange" id="numero" placeholder="Digite o seu numero">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="areaTexto" class="text-primary">Digite sua mensagem</label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      </fieldset>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+          Aceito os termos
+        </label>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Estou de acordo
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  </body>
+</html>
